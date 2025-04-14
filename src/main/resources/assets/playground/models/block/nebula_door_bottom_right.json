@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right",
+  "textures": {
+    "bottom": "playground:block/nebula_door_bottom",
+    "top": "playground:block/nebula_door_top"
+  }
+}

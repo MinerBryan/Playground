@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "playground:block/bismuth_block"
+        }
+    }
+}

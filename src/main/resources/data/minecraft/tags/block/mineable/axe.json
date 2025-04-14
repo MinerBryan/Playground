@@ -1,0 +1,12 @@
+{
+    "replace": false,
+    "values": [
+      "playground:nebula_log",
+      "playground:nebula_planks",
+      "playground:nebula_wood",
+      "playground:nebula_fence",
+      "playground:nebula_fence_gate",
+      "playground:nebula_door",
+      "playground:nebula_trapdoor"
+    ]
+  }

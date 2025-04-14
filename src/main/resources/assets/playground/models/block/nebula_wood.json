@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "playground:block/nebula_log",
+    "side": "playground:block/nebula_log"
+  }
+}

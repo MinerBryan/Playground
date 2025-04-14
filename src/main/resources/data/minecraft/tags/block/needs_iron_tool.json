@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+      "playground:stellarium_door",
+      "playground:stellarium_trapdoor",
+      "playground:stellarium_block",
+      "playground:stellarium_ore"
+    ]
+  }

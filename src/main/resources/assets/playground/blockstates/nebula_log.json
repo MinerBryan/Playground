@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "playground:block/nebula_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "playground:block/nebula_log"
+    },
+    "axis=z": {
+      "model": "playground:block/nebula_log_horizontal",
+      "x": 90
+    }
+  }
+}
