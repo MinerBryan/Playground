@@ -11,7 +11,6 @@
     "##"
   ],
   "result": {
-    "item": "playground:stellarium_trapdoor"
-  },
-  "show_notification": true
+    "id": "playground:stellarium_trapdoor"
+  }
 }

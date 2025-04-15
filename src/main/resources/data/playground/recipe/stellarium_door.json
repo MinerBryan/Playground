@@ -13,7 +13,6 @@
   ],
   "result": {
     "count": 3,
-    "item": "playground:stellarium_door"
-  },
-  "show_notification": true
+    "id": "playground:stellarium_door"
+  }
 }

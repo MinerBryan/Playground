@@ -13,7 +13,6 @@
   ],
   "result": {
     "count": 2,
-    "item": "playground:nebula_trapdoor"
-  },
-  "show_notification": true
+    "id": "playground:nebula_trapdoor"
+  }
 }

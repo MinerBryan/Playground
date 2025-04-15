@@ -12,7 +12,6 @@
     "###"
   ],
   "result": {
-    "item": "playground:stellarium_block"
-  },
-  "show_notification": true
+    "id": "playground:stellarium_block"
+  }
 }

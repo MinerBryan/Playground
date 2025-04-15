@@ -7,5 +7,7 @@
   "ingredient": {
     "item": "playground:raw_stellarium"
   },
-  "result": "playground:stellarium_ingot"
+  "result": {
+    "id": "playground:stellarium_ingot"
+  }
 }
