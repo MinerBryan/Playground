@@ -17,34 +17,34 @@ public class ItemRegistry {
     public static final DeferredItem<BlockItem> EXAMPLE_BLOCK_ENTITY_ITEM = ITEMS.register("example_block_entity", () -> new BlockItem(BlockRegistry.EXAMPLE_BLOCK_ENTITY.get(), new Item.Properties()));
 
     //Ores
-    public static final DeferredItem<BlockItem> STELLARIUM_ORE_ITEM = ITEMS.register("stellarium_ore", () -> new BlockItem(BlockRegistry.STELLARIUM_ORE.get(), new Item.Properties()));
+    public static final DeferredItem<BlockItem> STELLARIUM_ORE_ITEM = registerBlockItem("stellarium_ore", BlockRegistry.STELLARIUM_ORE);
 
     //Raw Blocks
-//    public static final DeferredItem<BlockItem> RAW_STELLARIUM_BLOCk_ITEM = ITEMS.register("raw_stellarium_block", ())
+//    public static final DeferredItem<BlockItem> RAW_STELLARIUM_BLOCk_ITEM = registerBlockItem("raw_stellarium_block", BlockRegistry.RAW_STELLARIUM_BLOCK)
 
     //Metal Blocks
-    public static final DeferredItem<BlockItem> STELLARIUM_BLOCK_ITEM = ITEMS.register("stellarium_block", () -> new BlockItem(BlockRegistry.STELLARIUM_BLOCK.get(), new Item.Properties()));
+    public static final DeferredItem<BlockItem> STELLARIUM_BLOCK_ITEM = registerBlockItem("stellarium_block", BlockRegistry.STELLARIUM_BLOCK);
 
     //Sapling
-    public static final DeferredItem<BlockItem> NEBULA_SAPLING_ITEM = ITEMS.register("nebula_sapling", () -> new BlockItem(BlockRegistry.NEBULA_SAPLING.get(), new Item.Properties()));
+    public static final DeferredItem<BlockItem> NEBULA_SAPLING_ITEM = registerBlockItem("nebula_sapling", BlockRegistry.NEBULA_SAPLING);
 
     //Planks
-    public static final DeferredItem<BlockItem> NEBULA_PLANKS_ITEM = ITEMS.register("nebula_planks", () -> new BlockItem(BlockRegistry.NEBULA_PLANKS.get(), new Item.Properties()));
+    public static final DeferredItem<BlockItem> NEBULA_PLANKS_ITEM = registerBlockItem("nebula_planks", BlockRegistry.NEBULA_PLANKS);
 
     //Log
-    public static final DeferredItem<BlockItem> NEBULA_LOG_ITEM = ITEMS.register("nebula_log", () -> new BlockItem(BlockRegistry.NEBULA_LOG.get(), new Item.Properties()));
+    public static final DeferredItem<BlockItem> NEBULA_LOG_ITEM = registerBlockItem("nebula_log", BlockRegistry.NEBULA_LOG);
 
     //Wood
-    public static final DeferredItem<BlockItem> NEBULA_WOOD_ITEM = ITEMS.register("nebula_wood", () -> new BlockItem(BlockRegistry.NEBULA_WOOD.get(), new Item.Properties()));
+    public static final DeferredItem<BlockItem> NEBULA_WOOD_ITEM = registerBlockItem("nebula_wood", BlockRegistry.NEBULA_WOOD);
 
     //Leaves
-    public static final DeferredItem<BlockItem> NEBULA_LEAVES_ITEM = ITEMS.register("nebula_leaves", () -> new BlockItem(BlockRegistry.NEBULA_LEAVES.get(), new Item.Properties()));
+    public static final DeferredItem<BlockItem> NEBULA_LEAVES_ITEM = registerBlockItem("nebula_leaves", BlockRegistry.NEBULA_LEAVES);
 
     //Fence
-    public static final DeferredItem<BlockItem> NEBULA_FENCE_ITEM = ITEMS.register("nebula_fence", () -> new BlockItem(BlockRegistry.NEBULA_FENCE.get(), new Item.Properties()));
+    public static final DeferredItem<BlockItem> NEBULA_FENCE_ITEM = registerBlockItem("nebula_fence", BlockRegistry.NEBULA_FENCE);
 
     //Fence Gate
-    public static final DeferredItem<BlockItem> NEBULA_FENCE_GATE_ITEM = ITEMS.register("nebula_fence_gate", () -> new BlockItem(BlockRegistry.NEBULA_FENCE_GATE.get(), new Item.Properties()));
+    public static final DeferredItem<BlockItem> NEBULA_FENCE_GATE_ITEM = registerBlockItem("nebula_fence_gate", BlockRegistry.NEBULA_FENCE_GATE);
 
     //Doors
     public static final DeferredItem<BlockItem> NEBULA_DOOR_ITEM = registerBlockItem("nebula_door", BlockRegistry.NEBULA_DOOR);
