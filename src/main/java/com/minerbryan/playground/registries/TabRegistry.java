@@ -23,19 +23,24 @@ public class TabRegistry {
                 .icon(() -> ItemRegistry.RADISH.get().getDefaultInstance())
                 .displayItems((parameters, output) -> {
                     output.accept(ItemRegistry.RADISH.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
-                    output.accept(ItemRegistry.STELLARIUM_INGOT.get());
-                    output.accept(ItemRegistry.RAW_STELLARIUM.get());
-                    output.accept(BlockRegistry.STELLARIUM_BLOCK.get());
                     output.accept(BlockRegistry.BISMUTH_BLOCK.get());
                     output.accept(BlockRegistry.EXAMPLE_BLOCK_ENTITY.get());
+                    output.accept(BlockRegistry.STELLARIUM_ORE.get());
+                    output.accept(ItemRegistry.RAW_STELLARIUM.get());
+                    output.accept(ItemRegistry.STELLARIUM_INGOT.get());
+//                    output.accept(BlockRegistry.RAW_STELLARIUM_BLOCK.get());
+                    output.accept(BlockRegistry.STELLARIUM_BLOCK.get());
+                    output.accept(BlockRegistry.STELLARIUM_DOOR.get());
+                    output.accept(BlockRegistry.STELLARIUM_TRAPDOOR.get());
+                    output.accept(BlockRegistry.NEBULA_SAPLING.get());
                     output.accept(BlockRegistry.NEBULA_LEAVES.get());
                     output.accept(BlockRegistry.NEBULA_LOG.get());
-                    output.accept(BlockRegistry.STELLARIUM_ORE.get());
-                    output.accept(BlockRegistry.NEBULA_SAPLING.get());
                     output.accept(BlockRegistry.NEBULA_WOOD.get());
                     output.accept(BlockRegistry.NEBULA_PLANKS.get());
                     output.accept(BlockRegistry.NEBULA_FENCE.get());
                     output.accept(BlockRegistry.NEBULA_FENCE_GATE.get());
+                    output.accept(BlockRegistry.NEBULA_DOOR.get());
+                    output.accept(BlockRegistry.NEBULA_TRAPDOOR.get());
                 })
                 .build()
     );
