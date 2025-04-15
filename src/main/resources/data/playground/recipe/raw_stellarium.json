@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "playground:raw_stellarium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "playground:raw_stellarium"
+  }
+}

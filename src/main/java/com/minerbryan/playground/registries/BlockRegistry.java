@@ -34,7 +34,7 @@ public class BlockRegistry {
     public static final DeferredBlock<Block> STELLARIUM_ORE = BLOCKS.register("stellarium_ore", () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
 
     //Raw Blocks
-    //public static final DeferredBlock<Block> RAW_STELLARIUM_BLOCK = BLOCKS.register("raw_stellarium_block", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_IRON_BLOCK)));
+    public static final DeferredBlock<Block> RAW_STELLARIUM_BLOCK = BLOCKS.register("raw_stellarium_block", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_IRON_BLOCK)));
 
     //Metal Block
     public static final DeferredBlock<Block> STELLARIUM_BLOCK = BLOCKS.registerSimpleBlock("stellarium_block", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK));

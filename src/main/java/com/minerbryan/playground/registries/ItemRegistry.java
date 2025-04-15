@@ -20,7 +20,7 @@ public class ItemRegistry {
     public static final DeferredItem<BlockItem> STELLARIUM_ORE_ITEM = registerBlockItem("stellarium_ore", BlockRegistry.STELLARIUM_ORE);
 
     //Raw Blocks
-//    public static final DeferredItem<BlockItem> RAW_STELLARIUM_BLOCk_ITEM = registerBlockItem("raw_stellarium_block", BlockRegistry.RAW_STELLARIUM_BLOCK)
+    public static final DeferredItem<BlockItem> RAW_STELLARIUM_BLOCK_ITEM = registerBlockItem("raw_stellarium_block", BlockRegistry.RAW_STELLARIUM_BLOCK);
 
     //Metal Blocks
     public static final DeferredItem<BlockItem> STELLARIUM_BLOCK_ITEM = registerBlockItem("stellarium_block", BlockRegistry.STELLARIUM_BLOCK);
