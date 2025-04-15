@@ -27,6 +27,7 @@ public class TabRegistry {
                     output.accept(BlockRegistry.EXAMPLE_BLOCK_ENTITY.get());
                     output.accept(BlockRegistry.STELLARIUM_ORE.get());
                     output.accept(ItemRegistry.RAW_STELLARIUM.get());
+                    output.accept(ItemRegistry.STELLARIUM_NUGGET.get());
                     output.accept(ItemRegistry.STELLARIUM_INGOT.get());
                     output.accept(BlockRegistry.RAW_STELLARIUM_BLOCK.get());
                     output.accept(BlockRegistry.STELLARIUM_BLOCK.get());

@@ -15,7 +15,8 @@
   "block.playground.stellarium_block": "Stellarium Block",
   "block.playground.stellarium_door": "Stellarium Door",
   "block.playground.stellarium_trapdoor": "Stellarium Trapdoor",
-  "block.playground.raw_stellarium_block": "Raw Stellarium Block",
+  "block.playground.raw_stellarium_block": "Block of Raw Stellarium",
+  "item.playground.stellarium_nugget": "Stellarium Nugget",
   "item.playground.stellarium_ingot": "Stellarium Ingot",
   "item.playground.raw_stellarium": "Raw Stellarium",
   "item.playground.radish": "Radish"

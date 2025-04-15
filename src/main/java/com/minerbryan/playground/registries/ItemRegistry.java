@@ -62,6 +62,7 @@ public class ItemRegistry {
     // Materials
     public static final DeferredItem<Item> STELLARIUM_INGOT = ITEMS.register("stellarium_ingot", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_STELLARIUM = ITEMS.register("raw_stellarium", () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> STELLARIUM_NUGGET = ITEMS.register("stellarium_nugget", () -> new Item(new Item.Properties()));
 
     protected static DeferredItem<BlockItem> registerBlockItem(String name, DeferredBlock<?> block) {
         return ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
