@@ -4,6 +4,7 @@
       "playground:stellarium_door",
       "playground:stellarium_trapdoor",
       "playground:stellarium_block",
-      "playground:stellarium_ore"
+      "playground:stellarium_ore",
+      "playground:raw_stellarium_block"
     ]
   }
