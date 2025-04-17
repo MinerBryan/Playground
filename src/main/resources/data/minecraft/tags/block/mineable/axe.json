@@ -7,6 +7,8 @@
       "playground:nebula_fence",
       "playground:nebula_fence_gate",
       "playground:nebula_door",
-      "playground:nebula_trapdoor"
+      "playground:nebula_trapdoor",
+      "playground:nebula_pressure_plate",
+      "playground:nebula_button"
     ]
   }
