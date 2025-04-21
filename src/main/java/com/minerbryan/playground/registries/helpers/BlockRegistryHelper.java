@@ -1,5 +1,6 @@
 package com.minerbryan.playground.registries.helpers;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.grower.TreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -13,6 +14,30 @@ import static com.minerbryan.playground.registries.BlockRegistry.BLOCKS;
 import static com.minerbryan.playground.registries.ItemRegistry.registerBlockItem;
 
 public class BlockRegistryHelper {
+    protected static DeferredBlock<DropExperienceBlock> registerBasicOre(String name, int minXP, int maxXP, Block baseBlock) {
+        return registerBlock(name, () -> new DropExperienceBlock(UniformInt.of(minXP,maxXP), BlockBehaviour.Properties.ofFullCopy(baseBlock)));
+    }
+
+    protected static DeferredBlock<DropExperienceBlock> registerOre(String name, int minXP, int maxXP, BlockBehaviour.Properties properties) {
+        return registerBlock(name, () -> new DropExperienceBlock(UniformInt.of(minXP,maxXP), properties));
+    }
+
+    protected static DeferredBlock<StairBlock> registerBasicStairs(String name, Block baseBlock){
+        return registerBlock(name, () -> new StairBlock(baseBlock.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(baseBlock)));
+    }
+
+    protected static DeferredBlock<StairBlock> registerStairs(String name, Block baseBlock, BlockBehaviour.Properties properties) {
+        return registerBlock(name, () -> new StairBlock(baseBlock.defaultBlockState(), properties));
+    }
+
+    protected static DeferredBlock<SlabBlock> registerBasicSlab(String name, Block baseBlock) {
+        return registerBlock(name, () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(baseBlock)));
+    }
+
+    protected static DeferredBlock<SlabBlock> registerSlab(String name, BlockBehaviour.Properties properties) {
+        return registerBlock(name, () -> new SlabBlock(properties));
+    }
+
     protected static DeferredBlock<LeavesBlock> registerBasicLeaves(String name) {
         return registerBlock(name, () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
     }
@@ -37,6 +62,14 @@ public class BlockRegistryHelper {
         return registerBlock(name, () -> new FenceGateBlock(type, properties));
     }
 
+    protected static DeferredBlock<WallBlock> registerBasicWall(String name, Block baseBlock) {
+        return registerBlock(name, () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(baseBlock)));
+    }
+
+    protected  static DeferredBlock<WallBlock> registerWall(String name, BlockBehaviour.Properties properties){
+        return registerBlock(name, () -> new WallBlock(properties));
+    }
+
     protected static DeferredBlock<DoorBlock> registerBasicDoor(String name) {
         return registerBlock(name, () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR)));
     }
@@ -51,6 +84,22 @@ public class BlockRegistryHelper {
 
     protected static DeferredBlock<TrapDoorBlock> registerTrapdoor(String name, BlockSetType type, BlockBehaviour.Properties properties) {
         return registerBlock(name, () -> new TrapDoorBlock(type, properties));
+    }
+
+    protected static DeferredBlock<PressurePlateBlock> registerBasicPressurePlate(String name) {
+        return registerBlock(name, () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PRESSURE_PLATE)));
+    }
+
+    protected static DeferredBlock<PressurePlateBlock> registerPressurePlate(String name, BlockSetType type, BlockBehaviour.Properties properties) {
+        return registerBlock(name, () -> new PressurePlateBlock(type, properties));
+    }
+
+    protected static DeferredBlock<ButtonBlock> registerBasicButton(String name) {
+        return registerBlock(name, () -> new ButtonBlock(BlockSetType.OAK, 30, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_BUTTON)));
+    }
+
+    protected static DeferredBlock<ButtonBlock> registerButton(String name, BlockSetType type, int ticks, BlockBehaviour.Properties properties) {
+        return registerBlock(name, () -> new ButtonBlock(type, ticks, properties));
     }
 
     protected static DeferredBlock<SaplingBlock> registerBasicSapling(String name, TreeGrower grower) {
