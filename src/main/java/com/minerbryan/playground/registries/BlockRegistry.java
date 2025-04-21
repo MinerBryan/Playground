@@ -46,6 +46,12 @@ public class BlockRegistry extends BlockRegistryHelper{
     //Planks
     public static final DeferredBlock<Block> NEBULA_PLANKS = registerBasicBlock("nebula_planks", BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).mapColor(MapColor.COLOR_PURPLE));
 
+    //Stairs
+    public static final DeferredBlock<StairBlock> NEBULA_STAIRS = registerBasicStairs("nebula_stairs", NEBULA_PLANKS.get());
+
+    //Slabs
+    public static final DeferredBlock<SlabBlock> NEBULA_SLABS = registerBasicSlab("nebula_slab", NEBULA_PLANKS.get());
+
     //Sapling
     public static final DeferredBlock<SaplingBlock> NEBULA_SAPLING = registerSapling("nebula_sapling",
             new TreeGrower(
@@ -63,7 +69,6 @@ public class BlockRegistry extends BlockRegistryHelper{
 
     //Log
     public static final DeferredBlock<Block> NEBULA_LOG = registerBlock("nebula_log", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG).mapColor(MapColor.COLOR_PURPLE)));
-
     //Wood
     public static final DeferredBlock<Block> NEBULA_WOOD = registerBlock("nebula_wood", () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD).mapColor(MapColor.COLOR_PURPLE)));
 
@@ -83,6 +88,12 @@ public class BlockRegistry extends BlockRegistryHelper{
     //Trapdoors
     public static final DeferredBlock<TrapDoorBlock> NEBULA_TRAPDOOR = registerTrapdoor("nebula_trapdoor", BlockSetType.CHERRY, BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_TRAPDOOR).mapColor(MapColor.COLOR_PURPLE));
     public static final DeferredBlock<TrapDoorBlock> STELLARIUM_TRAPDOOR = registerTrapdoor("stellarium_trapdoor", BlockSetType.IRON, BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_TRAPDOOR));
+
+    //Pressure Plates
+    public static final DeferredBlock<PressurePlateBlock> NEBULA_PRESSURE_PLATE = registerPressurePlate("nebula_pressure_plate", BlockSetType.CHERRY, BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_PRESSURE_PLATE).mapColor(MapColor.COLOR_PURPLE));
+
+    //Buttons
+    public static final DeferredBlock<ButtonBlock> NEBULA_BUTTON = registerButton("nebula_button", BlockSetType.CHERRY, 30, BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_BUTTON).mapColor(MapColor.COLOR_PURPLE));
 
     // Directly Copied over from MC's Blocks.java file
     private static boolean never(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, EntityType<?> entityType) { return false; }
