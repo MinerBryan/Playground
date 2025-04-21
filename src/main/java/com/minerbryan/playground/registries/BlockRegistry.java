@@ -32,6 +32,7 @@ public class BlockRegistry extends BlockRegistryHelper{
 
     //Ore
     public static final DeferredBlock<DropExperienceBlock> STELLARIUM_ORE = registerBasicOre("stellarium_ore",4, 6, RAW_STELLARIUM_BLOCK.get());
+    public static final DeferredBlock<DropExperienceBlock> STELLARIUM_2_ORE = registerBasicOre("stellarium_ore",2, 5, RAW_STELLARIUM_BLOCK.get());
 
     //Metal Block
     public static final DeferredBlock<Block> STELLARIUM_BLOCK = registerBasicBlock("stellarium_block", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).mapColor(MapColor.COLOR_BLUE));
