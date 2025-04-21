@@ -34,11 +34,11 @@ public class BlockRegistry extends BlockRegistryHelper{
     public static final DeferredBlock<Block> BISMUTH_BLOCK = registerBasicBlock("bismuth_block", BlockBehaviour.Properties.of().mapColor(MapColor.STONE));
     public static final DeferredBlock<Block> EXAMPLE_BLOCK_ENTITY = registerBlock("example_block_entity", () -> new ExampleBlockEntity(BlockBehaviour.Properties.of().noOcclusion()));
 
-    //Ore
-    public static final DeferredBlock<Block> STELLARIUM_ORE = registerBlock("stellarium_ore", () -> new DropExperienceBlock(UniformInt.of(2, 4), BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST_CLUSTER)));
-
     //Raw Blocks
     public static final DeferredBlock<Block> RAW_STELLARIUM_BLOCK = registerBasicBlock("raw_stellarium_block", BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_IRON_BLOCK).mapColor(MapColor.COLOR_BLUE));
+
+    //Ore
+    public static final DeferredBlock<DropExperienceBlock> STELLARIUM_ORE = registerBasicOre("stellarium_ore",4, 6, RAW_STELLARIUM_BLOCK.get());
 
     //Metal Block
     public static final DeferredBlock<Block> STELLARIUM_BLOCK = registerBasicBlock("stellarium_block", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).mapColor(MapColor.COLOR_BLUE));
