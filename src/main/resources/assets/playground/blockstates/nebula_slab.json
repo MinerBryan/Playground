@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "playground:block/nebula_slab"
+    },
+    "type=double": {
+      "model": "playground:block/nebula_planks"
+    },
+    "type=top": {
+      "model": "playground:block/nebula_slab_top"
+    }
+  }
+}
