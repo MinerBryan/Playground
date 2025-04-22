@@ -31,8 +31,7 @@ public class BlockRegistry extends BlockRegistryHelper{
     public static final DeferredBlock<Block> RAW_STELLARIUM_BLOCK = registerBasicBlock("raw_stellarium_block", BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_IRON_BLOCK).mapColor(MapColor.COLOR_BLUE));
 
     //Ore
-    public static final DeferredBlock<DropExperienceBlock> STELLARIUM_ORE = registerBasicOre("stellarium_ore",4, 6, RAW_STELLARIUM_BLOCK.get());
-    public static final DeferredBlock<DropExperienceBlock> STELLARIUM_2_ORE = registerBasicOre("stellarium_ore",2, 5, RAW_STELLARIUM_BLOCK.get());
+    public static final DeferredBlock<DropExperienceBlock> STELLARIUM_ORE = registerBasicOre("stellarium_ore",4, 6, RAW_STELLARIUM_BLOCK);
 
     //Metal Block
     public static final DeferredBlock<Block> STELLARIUM_BLOCK = registerBasicBlock("stellarium_block", BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).mapColor(MapColor.COLOR_BLUE));
@@ -41,10 +40,10 @@ public class BlockRegistry extends BlockRegistryHelper{
     public static final DeferredBlock<Block> NEBULA_PLANKS = registerBasicBlock("nebula_planks", BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).mapColor(MapColor.COLOR_PURPLE));
 
     //Stairs
-    public static final DeferredBlock<StairBlock> NEBULA_STAIRS = registerBasicStairs("nebula_stairs", NEBULA_PLANKS.get());
+    public static final DeferredBlock<StairBlock> NEBULA_STAIRS = registerBasicStairs("nebula_stairs", NEBULA_PLANKS);
 
     //Slabs
-    public static final DeferredBlock<SlabBlock> NEBULA_SLABS = registerBasicSlab("nebula_slab", NEBULA_PLANKS.get());
+    public static final DeferredBlock<SlabBlock> NEBULA_SLABS = registerBasicSlab("nebula_slab", NEBULA_PLANKS);
 
     //Sapling
     public static final DeferredBlock<SaplingBlock> NEBULA_SAPLING = registerSapling("nebula_sapling",

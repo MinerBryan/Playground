@@ -14,24 +14,24 @@ import static com.minerbryan.playground.registries.BlockRegistry.BLOCKS;
 import static com.minerbryan.playground.registries.ItemRegistry.registerBlockItem;
 
 public class BlockRegistryHelper {
-    protected static DeferredBlock<DropExperienceBlock> registerBasicOre(String name, int minXP, int maxXP, Block baseBlock) {
-        return registerBlock(name, () -> new DropExperienceBlock(UniformInt.of(minXP,maxXP), BlockBehaviour.Properties.ofFullCopy(baseBlock)));
+    protected static DeferredBlock<DropExperienceBlock> registerBasicOre(String name, int minXP, int maxXP, Supplier<? extends Block> baseBlock) {
+        return registerBlock(name, () -> new DropExperienceBlock(UniformInt.of(minXP,maxXP), BlockBehaviour.Properties.ofFullCopy(baseBlock.get())));
     }
 
     protected static DeferredBlock<DropExperienceBlock> registerOre(String name, int minXP, int maxXP, BlockBehaviour.Properties properties) {
         return registerBlock(name, () -> new DropExperienceBlock(UniformInt.of(minXP,maxXP), properties));
     }
 
-    protected static DeferredBlock<StairBlock> registerBasicStairs(String name, Block baseBlock){
-        return registerBlock(name, () -> new StairBlock(baseBlock.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(baseBlock)));
+    protected static DeferredBlock<StairBlock> registerBasicStairs(String name, Supplier<? extends Block> baseBlock){
+        return registerBlock(name, () -> new StairBlock(baseBlock.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(baseBlock.get())));
     }
 
-    protected static DeferredBlock<StairBlock> registerStairs(String name, Block baseBlock, BlockBehaviour.Properties properties) {
-        return registerBlock(name, () -> new StairBlock(baseBlock.defaultBlockState(), properties));
+    protected static DeferredBlock<StairBlock> registerStairs(String name, Supplier<? extends Block> baseBlock, BlockBehaviour.Properties properties) {
+        return registerBlock(name, () -> new StairBlock(baseBlock.get().defaultBlockState(), properties));
     }
 
-    protected static DeferredBlock<SlabBlock> registerBasicSlab(String name, Block baseBlock) {
-        return registerBlock(name, () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(baseBlock)));
+    protected static DeferredBlock<SlabBlock> registerBasicSlab(String name, Supplier<? extends Block> baseBlock) {
+        return registerBlock(name, () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(baseBlock.get())));
     }
 
     protected static DeferredBlock<SlabBlock> registerSlab(String name, BlockBehaviour.Properties properties) {
@@ -62,8 +62,8 @@ public class BlockRegistryHelper {
         return registerBlock(name, () -> new FenceGateBlock(type, properties));
     }
 
-    protected static DeferredBlock<WallBlock> registerBasicWall(String name, Block baseBlock) {
-        return registerBlock(name, () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(baseBlock)));
+    protected static DeferredBlock<WallBlock> registerBasicWall(String name, Supplier<? extends Block> baseBlock) {
+        return registerBlock(name, () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(baseBlock.get())));
     }
 
     protected  static DeferredBlock<WallBlock> registerWall(String name, BlockBehaviour.Properties properties){
