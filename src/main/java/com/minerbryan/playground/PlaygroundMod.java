@@ -1,5 +1,6 @@
 package com.minerbryan.playground;
 
+import com.minerbryan.playground.events.PlaygroundDataGenerator;
 import com.minerbryan.playground.gui.ExampleBEScreen;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -46,6 +47,8 @@ public class PlaygroundMod
         BlockEntityRegistry.register(bus);
 
         MenuRegistry.register(bus);
+
+//        bus.addListener(PlaygroundDataGenerator::gatherData);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ExampleMod) to respond directly to events.
