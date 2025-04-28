@@ -4,6 +4,7 @@ import com.minerbryan.playground.PlaygroundMod;
 import com.minerbryan.playground.registries.BlockRegistry;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.tags.BlockTags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 
 import java.util.concurrent.CompletableFuture;
@@ -16,7 +17,8 @@ public class PlaygroundBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(PlaygroundTags.Blocks.NEBULA_LOGS)
-                .add(BlockRegistry.NEBULA_LOG.get()
-                );
+                .add(BlockRegistry.NEBULA_LOG.get(), BlockRegistry.NEBULA_WOOD.get());
+        tag(BlockTags.LOGS).add(BlockRegistry.NEBULA_LOG.get()).replace(false);
+        tag(BlockTags.DOORS).add(BlockRegistry.STELLARIUM_DOOR.get()).replace(false);
     }
 }
