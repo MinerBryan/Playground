@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stellarium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "playground:stellarium_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:stellarium_ingot_from_smelting_stellarium_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stellarium_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:stellarium_ingot_from_smelting_stellarium_ore"
+    ]
+  }
+}

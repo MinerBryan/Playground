@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "stellarium_ingot",
+  "ingredient": {
+    "item": "playground:raw_stellarium"
+  },
+  "result": {
+    "count": 1,
+    "id": "playground:stellarium_ingot"
+  }
+}

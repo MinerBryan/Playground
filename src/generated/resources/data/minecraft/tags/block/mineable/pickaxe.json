@@ -1,0 +1,9 @@
+{
+  "values": [
+    "playground:raw_stellarium_block",
+    "playground:stellarium_block",
+    "playground:stellarium_ore",
+    "playground:stellarium_door",
+    "playground:stellarium_trapdoor"
+  ]
+}

@@ -1,5 +1,6 @@
 package com.minerbryan.playground.datagen.recipes;
 
+import com.minerbryan.playground.datagen.tags.PlaygroundTags;
 import com.minerbryan.playground.registries.BlockRegistry;
 import com.minerbryan.playground.registries.ItemRegistry;
 import net.minecraft.core.HolderLookup;
@@ -18,10 +19,12 @@ public class BlockRecipeProvider extends PlaygroundRecipeProvider {
 
     public void buildRecipes(@NotNull RecipeOutput output) {
         this.output = output;
+        //Stellarium Recipes
         doorBuilder(BlockRegistry.STELLARIUM_DOOR, Ingredient.of(ItemRegistry.STELLARIUM_INGOT));
         trapdoorBuilder(BlockRegistry.STELLARIUM_TRAPDOOR, Ingredient.of(ItemRegistry.STELLARIUM_INGOT));
 
-//        planksFromLogs(BlockRegistry.NEBULA_PLANKS, );
+        // Nebula Wood Recipes
+        planksFromLogs(output,BlockRegistry.NEBULA_PLANKS, PlaygroundTags.Items.NEBULA_LOGS, 4);
         woodFromLogs(output, BlockRegistry.NEBULA_WOOD, BlockRegistry.NEBULA_LOG);
         stairs(output, BlockRegistry.NEBULA_STAIRS, BlockRegistry.NEBULA_PLANKS);
         slab(BlockRegistry.NEBULA_SLABS, BlockRegistry.NEBULA_PLANKS);

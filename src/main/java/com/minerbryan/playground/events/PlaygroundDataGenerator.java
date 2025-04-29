@@ -23,7 +23,8 @@ public class PlaygroundDataGenerator {
         CompletableFuture<HolderLookup.Provider> lookup = event.getLookupProvider();
 
         generator.addProvider(event.includeServer(), new PGRecipeProvider(output, lookup));
-        generator.addProvider(event.includeServer(), new PlaygroundBlockTagProvider(output, lookup));
-//        generator.addProvider(event.includeServer(), new PlaygroundItemTagProvider(output, lookup));
+        PlaygroundBlockTagProvider blockTags = new PlaygroundBlockTagProvider(output, lookup);
+        generator.addProvider(event.includeServer(), blockTags);
+        generator.addProvider(event.includeServer(), new PlaygroundItemTagProvider(output, lookup, blockTags.contentsGetter()));
     }
 }
